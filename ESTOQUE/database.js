@@ -23,4 +23,4 @@ const DB = {
 
 };
 
-DB.init()
+DB.init();
