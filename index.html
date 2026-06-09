@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(6px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100 antialiased leading relaxed">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-transparent/50 backdrop-blur-md">
+        <div class="max-w-6x1 mx-auto px-6 py-4 flex items-center justify between">
+            <a class="flex items-center gap-3" href="">
+                <div
+                    class="w10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center font bold">
+                    NABA</div>
+                <span class="font-semibold text-lg">Lógica Easy</span>
+            </a>
+
+            <nav class="hidden md:flex gap-6 items-center text-slate-200/90">
+                <a href="#" class="hover:text-white">Home</a>
+                <a href="#recursos" class="hover:text-white">Recursos</a>
+                <a href="#sobre" class="hover:text-white">Sobre</a>
+                <a href="#contato" class="px-4 py-2 bg-indigo-600 rounded-md shadow hover:bg-pink-500">Começar</a>
+            </nav>
+            <button class="md:hidden p-2 text-slate-200/90" aria-label="Abrir menu">=</button>
+
+        </div>
+    </header>
+    <!-- HERO -->
+    <main class="max-w-6x1 mx-auto px-6 py-12">
+        <section class="grid grid-cols-1 md;grid-cols-2 gap-8 items-center">
+            <div class="order-2 md:order-1"></div>
+            <div class="rounded-2x1 overflow-hidden shadow-2x1"></div>
+            <img src="https://images.unsplash.com/photo-1558199099-ab7fa8a61cb4?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" class="w-full h-full object-cover object-center min-h-[280px] md:min-h-[420px]">
+
+            <div class="order-1 md:order-2 ">
+                <div class="glass p-8 rounded 2x1 shadow-x1">
+                    <h1 class="text-4x1 md:text-5x1 font-extrabold leading-tight mb-4">
+                        Learning Logic&nbsp;<span class="text-indigo-400">Easy</span>&<span class="text-pink-400">sad</span>
+                    </h1>
+                </div>
+            </div>
+
+
+            <div class="flex gap-4 flex-wrap">
+                <a href="#recursos" class="inline-flex items-center gap-3 px-5 py-3 bg-indigo-600 text-white rounded-lg font-medium shadow hover:bg-indigo-500">Começar Agora</a>
+                <a href="#sobre" class="inline-flex items-center gap03 px-5 py-3 border border-slate-700 rounded-lg text-slate-200 hover:bg-slate-800/60">Ver demo</a>
+
+                <ul class="my-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300">
+                    <li class="flex-items-center gap-3">Exercicios Práticos</li>
+                    <li class="flex-items-center gap-3">Mini Jogos</li>
+                    <li class="flex-items-center gap-3">Progresso Visual</li>
+                    <li class="flex-items-center gap-3">Conteúdo</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+        <footer id="contato" class="mt-12 text-slate-400 text-sm">
+            <div class="border-t border-slate-800/50 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p> Logica Easy</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white">Termos</a>
+                    <a href="#" class="hover:text-white">Privacidade</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
